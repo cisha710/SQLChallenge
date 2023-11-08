@@ -1,6 +1,5 @@
 # SQLChallenge
 # Pewlett-Hackard-Analysis
-Report on "silver tsunami."
 
 ## Overview of the analysis
 It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). 

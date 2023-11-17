@@ -1,39 +1,32 @@
-# SQLChallenge
-# Pewlett-Hackard-Analysis
+# SQLAlchamy Challenge
+# Honolulu, Hawaii Climate Analysis
 
 ## Overview of the analysis
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). 
-The purpose of this analysis is to do a research project about people whom the company employed during the 1980s and 1990s.
-
-Inspected the CSV files, and then used QuickDBD tool to get below ERD sketch an Entity Relationship Diagram of the tables.
-![ERD](https://github.com/cisha710/SQLChallenge/assets/143370584/25ffa814-f5d8-45a2-824c-3ac408597ead)
+To help with your trip planning so that one can check the climate, one can use this APP to do a climate analysis in that area.
 
 
-## Results: 
-1) Information about List the employee number, last name, first name, sex, and salary of each employee
-<img width="1208" alt="Q1" src="https://github.com/cisha710/SQLChallenge/assets/143370584/b85bbbc4-acdb-450f-a214-1b9c09487647">
+climate_starter.ipynb is updated with the required queries to answer the questions to get the initial analysis.
 
-2) List of the first name, last name, and hire date for the employees who were hired in 1986.
-<img width="1214" alt="Q2" src="https://github.com/cisha710/SQLChallenge/assets/143370584/9e556bfb-ea26-4db5-941d-5aee012c6b03">
+## API Dynamic Route Analysis: 
+1) Designed a Flask API based on the queries that are just developed.
+![Screenshot 2023-11-16 at 7 26 46 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/6d4ea2b5-c473-430c-9a88-57af350663a8)
 
-3) List of manager of each department along with their department number, department name, employee number, last name, and first name.
-<img width="1201" alt="Q3" src="https://github.com/cisha710/SQLChallenge/assets/143370584/b332ddc8-4181-4b32-9b2e-123cad4ad87a">
+2)A precipitation route to return json with the date as the key and the value as the precipitation.
+And it only returns the jsonified precipitation data for the last year in the database.
+![Screenshot 2023-11-16 at 8 52 00 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/5956aafd-b22e-4322-93e9-dc899778363a)
 
 
-4) List of department number for each employee along with that employee’s employee number, last name, first name, and department name.
-<img width="1208" alt="Q4" src="https://github.com/cisha710/SQLChallenge/assets/143370584/4a2e3f95-999f-4c70-a022-2bddfb4a1540">
+3) A stations route returns jsonified data of all of the stations in the database.
+![Screenshot 2023-11-16 at 8 52 47 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/115b5afd-41a4-4931-8f40-4979a67e1509)
 
-5) List of first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-<img width="1219" alt="Q5" src="https://github.com/cisha710/SQLChallenge/assets/143370584/da883da6-1e0b-4fb8-912d-23005e8022c8">
+4) A tobs route /api/v1.0/tobs returns jsonified data for the most active station (USC00519281). It only returns the jsonified data for the last year of data
+![Screenshot 2023-11-16 at 8 55 33 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/c47793d2-6576-4cab-8345-3825bd8e45a8)
 
-6) List of each employee in the Sales department, including their employee number, last name, and first name.
-<img width="1216" alt="Q6" src="https://github.com/cisha710/SQLChallenge/assets/143370584/ab11d3c0-7250-41e6-85b5-68cd2f32cf8b">
 
-7) List of each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
-<img width="1181" alt="Q7" src="https://github.com/cisha710/SQLChallenge/assets/143370584/e1dec036-0039-4165-87ba-44ca22561275">
+6) A start route that accepts the start date as a parameter from the URL and it returns the min, max, and average temperatures calculated from the given start date to the end of the dataset.
+![Screenshot 2023-11-16 at 7 16 00 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/e80c70ab-c957-4584-8f29-2ecac70a977e)
 
-8) List of the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
-<img width="1218" alt="Q8" src="https://github.com/cisha710/SQLChallenge/assets/143370584/34d00e52-9961-4deb-bee5-85114c40fa76">
-
+7) A start/end route that accepts the start and end dates as parameters from the URLto return the min, max, and average temperatures calculated from the given start date to the given end date.
+![Screenshot 2023-11-16 at 7 16 29 PM](https://github.com/cisha710/SQLChallenge/assets/143370584/f2c90c96-dc07-4b08-bee4-bb97570344d9)
 
 
